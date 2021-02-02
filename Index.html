@@ -5,13 +5,20 @@
 
     <body>
         <div>
-            <h1>Hola Mundo</h1>
+            <h1 id="uno">Hola Mundo</h1>
             <h2>Adios Mundo</h2>
         </div>
         <div>
-            <button>Click</button>
+            <button onclick="launchMessage()">Click</button>
+            <script>
+                function launchMessage() {
+                    alert("Hola");
+                    uno = document.getElementById("uno");
+                    uno.innerHTML="Hola Yamil";
+                }
+            </script>
             <div>
-                
+
             </div>
         </div>
     </body>
