@@ -7,22 +7,30 @@
 
         <div style="color: blueviolet; background-color:lavenderblush; ">
             <h1 id="uno">Hola Mundo</h1>
-            
+            <style>
+                h1 {
+                    text-align: center;
+                  }
+                </style>
             <h2>Adios Mundo</h2>
             <style>
-            h1 {
+            h2 {
                 text-align: center;
+                color: olive;
               }
             </style>
         </div>
         <div>
-            <button onclick="launchMessage()">Click</button>
+            <button onclick="launchMessage()" >Click</button>
             <script>
                 function launchMessage() {
                     alert("Hola");
                     uno = document.getElementById("uno");
                     uno.innerHTML="Hola Yamil";
+                    uno.style.color="pink";
+                    uno.style.backgroundColor="black";
                 }
+               
             </script>
             <div>
 
